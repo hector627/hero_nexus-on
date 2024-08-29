@@ -17,7 +17,7 @@
           </div>
           <nav>
             <ul class="nav-ul">
-              <li><a href="#" class="nav-ul__link remarkable">Inicio</a></li>
+              <li><a href="./" class="nav-ul__link remarkable">Inicio</a></li>
               <li><a href="#" class="nav-ul__link">Sobre nosotros</a></li>
               <li class="dropdown__li">
                 <a href="#" class="nav-ul__link dropdown__a"
@@ -115,15 +115,15 @@
           <div class="column">
             <div class="title">
               <h1 class="title__h1">
-                <strong class="title__strong"><span class="remarkable">N</span>exus-ON</strong>
                 <label>N</label>
+                <span class="title__h1--content"></span>
                 <span class="typed-cursor remarkable">|</span>
               </h1>
             </div>
             <div class="lema">
               <h2 class="lema__h2">
                 &nbsp;
-                <strong class="lema__strong"><span class="remarkable">C</span>iberseguridad ética</strong>
+                <span class="lema__h2--content"></span>
                 <span class="typed-cursor remarkable">|</span>
               </h2>
             </div>
@@ -180,10 +180,10 @@
         </div>
       </div>
       <ul class="mobile-nav-ul">
-        <li><a href="#" class="mobile-nav-ul__link">Inicio</a></li>
-        <li><a href="#" class="mobile-nav-ul__link">Sobre nosotros</a></li>
-        <li class="mobile-dropdown__link">
-          <a href="#" class="mobile-nav-ul__link mobile-dropdown__a"
+        <li data-list-mobile><a href="./" class="mobile-nav-ul__link">Inicio</a></li>
+        <li data-list-mobile><a href="#" class="mobile-nav-ul__link">Sobre nosotros</a></li>
+        <li class="mobile-dropdown__li" data-list-mobile>
+          <a class="mobile-nav-ul__link mobile-dropdown__a"
             >Servicios
             <div class="mobile-chevron">
               <div class="content-lines-chevron">
@@ -193,35 +193,37 @@
             </div>
           </a>
           <ul class="mobile-dropdown__ul">
-            <li>
-              <a href="#" class="mobile-dropdown__link">Consultoría legal y DPO</a>
-            </li>
-            <li>
-              <a href="#" class="mobile-dropdown__link">Auditorias de seguridad</a>
-            </li>
-            <li>
-              <a href="#" class="mobile-dropdown__link"
-                >Formación y concienciación</a
-              >
-            </li>
-            <li>
-              <a href="#" class="mobile-dropdown__link">Seguridad Entorno IT</a>
-            </li>
-            <li>
-              <a href="#" class="mobile-dropdown__link"
-                >Ciberseguridad industrial 4.0</a
-              >
-            </li>
+            <div class="mobile-dropdown__ul--overflow">
+              <li>
+                <a href="#" class="mobile-dropdown__link extra-padding">Consultoría legal y DPO</a>
+              </li>
+              <li>
+                <a href="#" class="mobile-dropdown__link">Auditorias de seguridad</a>
+              </li>
+              <li>
+                <a href="#" class="mobile-dropdown__link"
+                  >Formación y concienciación</a
+                >
+              </li>
+              <li>
+                <a href="#" class="mobile-dropdown__link">Seguridad Entorno IT</a>
+              </li>
+              <li>
+                <a href="#" class="mobile-dropdown__link last-dropdown-item"
+                  >Ciberseguridad industrial 4.0</a
+                >
+              </li>
+            </div>
           </ul>
         </li>
-        <li><a href="#" class="mobile-nav-ul__link">Soluciones de seguridad</a></li>
-        <li><a href="#" class="mobile-nav-ul__link">Blog</a></li>
-        <li><a href="#" class="mobile-nav-ul__link">Contacto</a></li>
-        <li>
+        <li data-list-mobile><a href="#" class="mobile-nav-ul__link">Soluciones de seguridad</a></li>
+        <li data-list-mobile><a href="#" class="mobile-nav-ul__link">Blog</a></li>
+        <li data-list-mobile><a href="#" class="mobile-nav-ul__link">Contacto</a></li>
+        <li data-list-mobile>
           <a href="#" class="mobile-nav-ul__link semibold remarkable">Agente Digitalizador Kit Digital</a>
         </li>
-        <li class="mobile-dropdown__link">
-          <a href="#" class="mobile-dropdown__a">
+        <li class="mobile-dropdown__li" data-list-mobile>
+          <a class="mobile-dropdown__a">
             <img src="img/español.png" alt="Bandera idioma español" />
             <div class="mobile-chevron">
               <div class="content-lines-chevron">
@@ -231,20 +233,24 @@
             </div>
           </a>
           <ul class="mobile-dropdown__ul">
-            <li>
-              <a href="#"
-                ><img src="img/catalan.png" alt="Bandera idioma catalan"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="img/ingles.png" alt="Bandera idioma inglés"
-              /></a>
-            </li>
+            <div class="mobile-dropdown__ul--overflow">
+              <li>
+                <a href="#" class="extra-padding"
+                  ><img src="img/catalan.png" alt="Bandera idioma catalan"
+                /></a>
+              </li>
+              <li>
+                <a href="#" class="extra-padding"
+                  ><img src="img/ingles.png" alt="Bandera idioma inglés"
+                /></a>
+              </li>
+            </div>
           </ul>
         </li>
       </ul>
     </nav>
     <!-- End mobile menu -->
+
+    <script src="js/index.js" type="module"></script>
   </body>
 </html>
